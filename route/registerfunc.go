@@ -6,7 +6,7 @@ import (
 )
 
 func registerFunc() {
-	 http.FileServer(http.Dir("./webchart/html"))
+	 http.FileServer(http.Dir("./webchart/html/"))
 	 http.HandleFunc("/",controller.Home)
      http.HandleFunc("/echo",controller.Echo)
 }
